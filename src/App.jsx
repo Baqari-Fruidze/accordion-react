@@ -61,6 +61,10 @@ const Main = styled.main`
   gap: 3.8rem;
   align-items: center;
   color: red;
+  /* @media only screen and (min-width: 90rem) {
+    flex-direction: row;
+    padding: 12.9rem 23.9rem 13rem 28rem;
+  } */
 `;
 const Title = styled.h1`
   color: #1e1f36;

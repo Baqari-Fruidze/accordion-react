@@ -20,5 +20,10 @@ body{
     justify-content:center;
     padding: 14.8rem 2.4rem 8.5rem;
     font-family: "Kumbh Sans", sans-serif;
+    
 }
+ @media (min-width: 90rem) {
+    padding: 12.9rem 23.9rem 13rem 28rem;
+  }
+
 `;
