@@ -3,8 +3,10 @@ import styled from "styled-components";
 import ilustrationMobile from "/images/bg-pattern-mobile.svg";
 import ilustrationWomanMobile from "/images/illustration-woman-online-mobile.svg";
 import QuestionSection from "./components/QuestionSection";
+import { useState } from "react";
 
 function App() {
+  const [active, setActive] = useState(null);
   return (
     <>
       <GlobalStyles />
@@ -19,7 +21,31 @@ function App() {
         </div>
 
         <Title>FAQ</Title>
-        <QuestionSection />
+        <QuestionSection
+          questionIndex={0}
+          setActive={setActive}
+          active={active}
+        />
+        <QuestionSection
+          questionIndex={1}
+          setActive={setActive}
+          active={active}
+        />
+        <QuestionSection
+          questionIndex={2}
+          setActive={setActive}
+          active={active}
+        />
+        <QuestionSection
+          questionIndex={3}
+          setActive={setActive}
+          active={active}
+        />
+        <QuestionSection
+          questionIndex={4}
+          setActive={setActive}
+          active={active}
+        />
       </Main>
     </>
   );
