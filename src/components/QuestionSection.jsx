@@ -49,6 +49,11 @@ const QuestionContainer = styled.section`
       transition: 0.3s;
     }
   }
+  @media (min-width: 90rem) {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+  }
 `;
 
 const Question = styled.h2`
@@ -63,6 +68,15 @@ const Question = styled.h2`
   &:hover {
     color: #f47b56;
   }
+  @media (min-width: 90rem) {
+    color: #4b4c5f;
+    font-family: "Kumbh Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: ${(props) =>
+      props.active === props.questionIndex ? "700" : "400"};
+    line-height: normal;
+  }
 `;
 const Answer = styled.p`
   color: #787887;
@@ -70,5 +84,5 @@ const Answer = styled.p`
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
 `;
